@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        background-color: #e7ecf1;
+        font-size: 2rem;
+        color: #404040;
+        font-weight: 600;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 5rem;
+      }
+
+      a:visited,
+      a:link {
+        text-decoration: none;
+        padding: 0.82rem;
+        border-radius: 50%;
+        width: 4.5rem;
+        height: 4.5rem;
+        text-align: center;
+        color: inherit;
+      }
+
+      a:hover,
+      a:active {
+        background-color: #0a7668;
+        color: white;
+      }
+
+      #setinha {
+        background-color: #0a7668;
+        color: white;
+      }
+
+      #setinha:hover {
+        background-color: white;
+        border: solid 1px black;
+        color: #0a7668;
+      }
+
+      #selecionado {
+        color: white;
+        background-color: #0a7668;
+      }
+    </style>
+    <nav>
+      <a id="setinha" href="">&#8249;</a>
+      <a href="">1</a>
+      <a href="">2</a>
+      <a id="selecionado" href="">3</a>
+      <a href="">4</a>
+      <a href="">...</a>
+      <a href="">25</a>
+      <a id="setinha" href="">&#8250;</a>
+    </nav>
+  </body>
+</html>
