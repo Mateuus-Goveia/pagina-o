@@ -19,60 +19,66 @@
 
       body {
         background-color: #e7ecf1;
-        font-size: 2rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.4;
         color: #404040;
-        font-weight: 600;
       }
 
-      nav {
+      .paginacao {
         display: flex;
-        align-items: center;
         gap: 2rem;
         padding: 5rem;
+        align-items: center;
       }
 
-      a:visited,
-      a:link {
-        text-decoration: none;
-        padding: 0.82rem;
+      .paginacao-botao,
+      #pagina-ativa,
+      .paginacao-link:hover {
+        background-color: #0a7668;
+        color: white;
         border-radius: 50%;
+        font-weight: 700;
+      }
+
+      .paginacao-botao {
+        font-size: 1.93rem;
         width: 4.5rem;
         height: 4.5rem;
-        text-align: center;
-        color: inherit;
+        border: none;
+        cursor: pointer;
       }
 
-      a:hover,
-      a:active {
-        background-color: #0a7668;
-        color: white;
-      }
-
-      #setinha {
-        background-color: #0a7668;
-        color: white;
-      }
-
-      #setinha:hover {
+      .paginacao-botao:hover {
         background-color: white;
-        border: solid 1px black;
         color: #0a7668;
+        border: solid 1px #0a7668;
       }
 
-      #selecionado {
-        color: white;
-        background-color: #0a7668;
+      .paginacao-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        width: 3.5rem;
+        height: 3.5rem;
       }
     </style>
-    <nav>
-      <a id="setinha" href="">&#8249;</a>
-      <a href="">1</a>
-      <a href="">2</a>
-      <a id="selecionado" href="">3</a>
-      <a href="">4</a>
-      <a href="">...</a>
-      <a href="">25</a>
-      <a id="setinha" href="">&#8250;</a>
-    </nav>
+
+    <main>
+      <section>
+        <div class="paginacao">
+          <button class="paginacao-botao botao-esquerda">&#60;</button>
+          <a href="#" class="paginacao-link">1</a>
+          <a href="#" class="paginacao-link">2</a>
+          <a href="#" class="paginacao-link" id="pagina-ativa">3</a>
+          <a href="#" class="paginacao-link">4</a>
+          <a href="#" class="paginacao-link">...</a>
+          <a href="#" class="paginacao-link">25</a>
+          <button class="paginacao-botao botao-direita">&#62;</button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
